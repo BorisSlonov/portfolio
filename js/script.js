@@ -1,4 +1,20 @@
 
+// $(document).ready(function() {
+
+//     $('.main-btn').removeClass('d-none');
+
+// });
+
+setInterval(ajaxCall, 3000); //тут можно поменять задержу (значение в мс)
+
+function ajaxCall() {
+
+    el.classList.remove("d-none");
+}
+
+
+
+
 typed1 = new Typed('#typed2', {
     strings: ['Slonov Boris', 'Web Dev', 'from Saint P'],
     typeSpeed: 80,
