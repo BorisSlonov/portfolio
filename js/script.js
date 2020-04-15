@@ -1,5 +1,5 @@
 
-var typed1 = new Typed('#typed2', {
+typed1 = new Typed('#typed2', {
     strings: ['Slonov Boris', 'Web Dev', 'from Saint P'],
     typeSpeed: 80,
     backSpeed: 50,
@@ -10,16 +10,16 @@ var typed1 = new Typed('#typed2', {
 });
 
 
-var typed2 = new Typed('#typed3', {
-    strings: ['Hello!', 'im Slonov Boris', 'Web Developer'],
-    typeSpeed: 80,
-    backSpeed: 50,
+let typed2 = new Typed('#typed3', {
+    strings: ['Hello!', 'Im Slonov Boris', 'Web Developer'],
+    typeSpeed: 30,
+    backSpeed: 40,
     fadeOut: false,
     loop: false,
     cursorChar: ''
 });
 
-var typed3 = new Typed('#typed4', {
+let typed3 = new Typed('#typed4', {
     strings: ['Have a Nice Day!', 'Just Smile!:)', 'Slonov Boris'],
     typeSpeed: 80,
     backSpeed: 50,
@@ -27,3 +27,4 @@ var typed3 = new Typed('#typed4', {
     loop: false,
     cursorChar: ''
 });
+
