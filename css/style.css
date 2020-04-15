@@ -79,6 +79,7 @@ body {
 
 .header {
   position: fixed;
+  z-index: 1000;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +240,20 @@ body {
 }
 
 .blink {
+  -webkit-animation: blink .49s infinite;
+          animation: blink .49s infinite;
+  /* Параметры анимации */
+}
+
+.blink75 {
+  -webkit-animation: blink .5s infinite;
+          animation: blink .5s infinite;
+  /* Параметры анимации */
+}
+
+.blink1 {
+  -webkit-animation: blink .51s infinite;
+          animation: blink .51s infinite;
   /* Параметры анимации */
 }
 
@@ -308,6 +323,11 @@ body {
   border-bottom: 1px solid rgba(52, 172, 78, 0.5);
   padding-bottom: 0.25em;
   margin-bottom: 0.25em;
+}
+
+.main__link {
+  position: relative;
+  z-index: 0;
 }
 
 .main__link a {
