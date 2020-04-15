@@ -5,6 +5,8 @@ $(document).ready(function() {
     $('.header').removeClass('d-none');
     $('.main').removeClass('d-none');
     $('.footer').removeClass('d-none');
+    $('.header-content__h2').removeClass('d-none');
+    $('.header-content__tech').removeClass('d-none');
 
 });
 
