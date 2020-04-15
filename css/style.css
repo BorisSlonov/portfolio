@@ -15,6 +15,7 @@ a {
 
 html,
 body {
+  min-height: 100%;
   font-size: 16px;
   font-family: 'VT323', monospace;
   background-color: rgba(0, 0, 0, 0.836);
@@ -188,7 +189,7 @@ body {
 .span-znak {
   line-height: 2.5;
   color: rgba(52, 172, 78, 0.253);
-  margin: 2em 0;
+  margin: 1.5em 0 2em;
   display: inline-block;
 }
 
