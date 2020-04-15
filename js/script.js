@@ -1,16 +1,11 @@
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
-//     $('.main-btn').removeClass('d-none');
+    $('.main-btn').removeClass('d-none');
+    $('.header').removeClass('d-none');
+    $('.main').removeClass('d-none');
 
-// });
-
-setInterval(ajaxCall, 3000); //тут можно поменять задержу (значение в мс)
-
-function ajaxCall() {
-
-    el.classList.remove("d-none");
-}
+});
 
 
 
