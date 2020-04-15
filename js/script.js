@@ -5,7 +5,7 @@ typed1 = new Typed('#typed2', {
     backSpeed: 50,
     fadeOut: true,
     loop: true,
-    startDelay: 8000,
+    startDelay: 7000,
     cursorChar: '_'
 });
 
