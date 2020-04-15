@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('.main-btn').removeClass('d-none');
     $('.header').removeClass('d-none');
     $('.main').removeClass('d-none');
+    $('.footer').removeClass('d-none');
 
 });
 
