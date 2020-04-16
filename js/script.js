@@ -1,10 +1,6 @@
 
-$(document).ready(function() {
-    
+$(document).ready(function () {
     $('.d-none-active').removeClass('d-none');
-    $('.footer').removeClass('d-none');
-    
-
 });
 
 
@@ -16,15 +12,15 @@ typed1 = new Typed('#typed2', {
     backSpeed: 50,
     fadeOut: true,
     loop: true,
-    startDelay: 6980,
+    startDelay: 8200,
     cursorChar: '_'
 });
 
 
 let typed2 = new Typed('#typed3', {
-    strings: ['_', '_', 'Hello!', 'Im Slonov Boris', 'Web Developer'],
+    strings: ['_', ' ', '_', 'Hello!', 'Im Slonov Boris', 'Web Developer'],
     typeSpeed: 30,
-    backSpeed: 40,
+    backSpeed: 25,
     fadeOut: false,
     loop: false,
     cursorChar: ''
