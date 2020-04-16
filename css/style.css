@@ -19,7 +19,7 @@ body {
   font-family: 'VT323', monospace;
   background-color: rgba(0, 0, 0, 0.836);
   color: #34AC4E;
-  scrollbar-color: rgba(0, 0, 0, 0.336) #34AC4E;
+  scrollbar-color: #34AC4E rgba(0, 0, 0, 0.836);
   /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: thin;
 }
@@ -89,12 +89,12 @@ body {
   /* ширина для вертикального скролла */
   height: .5em;
   /* высота для горизонтального скролла */
-  background-color: #34AC4E;
+  background-color: rgba(0, 0, 0, 0.836);
 }
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: #34AC4E;
   -webkit-box-shadow: inset 1px 1px 10px rgba(52, 172, 78, 0.322);
           box-shadow: inset 1px 1px 10px rgba(52, 172, 78, 0.322);
 }
