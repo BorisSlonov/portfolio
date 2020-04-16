@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
 typed1 = new Typed('#typed2', {
-    strings: ['Slonov Boris', 'Web Dev', 'For Your Business'],
+    strings: ['Slonov Boris', 'Web Dev', 'For You'],
     typeSpeed: 80,
     backSpeed: 50,
     fadeOut: true,
