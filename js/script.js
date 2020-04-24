@@ -1,5 +1,13 @@
 
-typed1 = new Typed('#typed2', {
+window.addEventListener('load', function () {
+    document.querySelector('body').classList.add("loaded")
+});
+
+
+
+
+
+let typed1 = new Typed('#typed2', {
     strings: ['Slonov Boris', 'Web Dev', 'For You'],
     typeSpeed: 80,
     backSpeed: 50,
