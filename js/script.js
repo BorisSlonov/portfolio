@@ -1,10 +1,13 @@
 
-window.addEventListener('load', function () {
-    document.querySelector('body').classList.add("loaded")
-});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    wow = new WOW({
+        live: false
+    })
+    wow.init();
 
 
-window.onload = function() {
     let typed1 = new Typed('#typed2', {
         strings: ['Slonov Boris', 'Web Dev', 'For You'],
         typeSpeed: 80,
@@ -44,8 +47,11 @@ window.onload = function() {
     
     
     displayChange();
- };
+    
+    
 
-
+    
+    
+}, false);
 
 
