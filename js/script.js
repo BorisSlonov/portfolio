@@ -1,11 +1,4 @@
 
-$(document).ready(function () {
-    $('.d-none-active').removeClass('d-none');
-});
-
-
-
-
 typed1 = new Typed('#typed2', {
     strings: ['Slonov Boris', 'Web Dev', 'For You'],
     typeSpeed: 80,
@@ -34,4 +27,15 @@ let typed3 = new Typed('#typed4', {
     loop: false,
     cursorChar: ''
 });
+
+
+setInterval(function displayChange(btnNone) {
+
+    let dNone = document.getElementById('btn-d-none');
+
+    dNone.style.display = 'flex';
+}, 100);
+
+
+displayChange();
 
