@@ -1,34 +1,30 @@
+window.onload = function TypeText() {
 
-
-document.addEventListener('DOMContentLoaded', function () {
-
-    wow = new WOW({
-        live: false
-    })
-    wow.init();
-
-
-    let typed1 = new Typed('#typed2', {
-        strings: ['Slonov Boris', 'Web Dev', 'For You'],
+    new Typed('#typed2', {
+        strings: ['Slonov Boris', 'Web Developer', 'Write Me Now!'],
         typeSpeed: 80,
-        backSpeed: 50,
+        backSpeed: 20,
         fadeOut: true,
         loop: true,
-        startDelay: 8200,
+        startDelay: 7500,
         cursorChar: '_'
     });
-    
-    
-    let typed2 = new Typed('#typed3', {
-        strings: ['_', ' ', '_', 'Hello!', 'Im Slonov Boris', 'Web Developer'],
+
+
+
+    new Typed('#typed3', {
+        strings: ['_', ' ', 'Hello!', 'Im Slonov Boris', 'Web Developer'],
         typeSpeed: 30,
         backSpeed: 25,
         fadeOut: false,
         loop: false,
         cursorChar: ''
     });
-    
-    let typed3 = new Typed('#typed4', {
+
+
+
+
+    new Typed('#typed4', {
         strings: ['Have a Nice Day!', 'Just Smile!:)', 'Slonov Boris'],
         typeSpeed: 80,
         backSpeed: 50,
@@ -36,22 +32,36 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: false,
         cursorChar: ''
     });
-    
-    
-    setInterval(function displayChange(btnNone) {
-    
-        let dNone = document.getElementById('btn-d-none');
-    
-        dNone.style.display = 'flex';
-    }, 100);
-    
-    
-    displayChange();
-    
-    
 
-    
-    
-}, false);
+
+    $(document).ready(function () {
+        setInterval(() => {
+            setInterval(() => {
+                $('.vis').fadeIn(500)
+            }, 4250);
+
+            setInterval(() => {
+                $('.vis-btn').fadeIn(500)
+            }, 4750);
+
+            setInterval(() => {
+                $('.vis-content').fadeIn(100)
+            }, 4900);
+
+            setInterval(() => {
+                $('.vis-header').fadeIn(100);
+            }, 5100);
+
+
+            setInterval(() => {
+                $('#h100vh').fadeOut(0);
+
+            }, 5000);
+        }, 1150);
+    });
+
+    new WOW().init();
+};
+
 
 
