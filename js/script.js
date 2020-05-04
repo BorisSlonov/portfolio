@@ -46,11 +46,11 @@ window.onload = function TypeText() {
 
             setInterval(() => {
                 $('.vis-content').fadeIn(100)
-            }, 4900);
+            }, 5000);
 
             setInterval(() => {
                 $('.vis-header').fadeIn(100);
-            }, 5100);
+            }, 5000);
 
 
             setInterval(() => {
