@@ -1,12 +1,12 @@
 window.onload = function TypeText() {
 
     new Typed('#typed2', {
-        strings: ['Slonov Boris', 'Web Developer', 'Write Me Now!'],
+        strings: ['Slonov Boris'],
         typeSpeed: 80,
         backSpeed: 20,
         fadeOut: true,
-        loop: true,
-        startDelay: 7500,
+        loop: false,
+        startDelay: 7600,
         cursorChar: '_'
     });
 
