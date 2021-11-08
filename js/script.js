@@ -24,15 +24,6 @@ window.onload = function TypeText() {
 
 
 
-    new Typed('#typed4', {
-        strings: ['Have a Nice Day!', 'Just Smile!:)', 'Slonov Boris'],
-        typeSpeed: 80,
-        backSpeed: 50,
-        fadeOut: false,
-        loop: false,
-        cursorChar: ''
-    });
-
 
     $(document).ready(function () {
         setInterval(() => {
