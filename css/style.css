@@ -194,22 +194,13 @@ a {
 html,
 body {
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "VT323", monospace;
   background-color: rgba(0, 0, 0, 0.836);
   color: #34ac4e;
   scrollbar-color: #34ac4e rgba(0, 0, 0, 0.836);
   scrollbar-width: thin;
 }
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Dela Gothic One';
-}
-header,
-footer {
-    font-family: 'Dela Gothic One';
-}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -221,6 +212,7 @@ footer {
 .link-hover::after {
   content: "";
   position: absolute;
+  bottom: -2px;
   display: block;
   width: 100%;
   height: 2px;
@@ -247,7 +239,7 @@ footer {
 @media (min-width: 1440px) {
   html,
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -263,11 +255,11 @@ footer {
   }
 }
 @media (max-width: 375px) {
-    html,
-    body {
-      font-size: 9px;
-    }
+  html,
+  body {
+    font-size: 11px;
   }
+}
 ::-webkit-scrollbar {
   width: 0.1em;
   height: 0.5em;
@@ -399,6 +391,8 @@ footer {
   flex-basis: 30%;
 }
 .header__social a {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   color: #34ac4e;
 }
@@ -408,6 +402,7 @@ footer {
   max-width: 15px;
   -webkit-transform: translateY(0.05em);
   transform: translateY(0.05em);
+  margin-right: 5px;
 }
 @media (max-width: 1024px) {
   .header__social {
