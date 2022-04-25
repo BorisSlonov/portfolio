@@ -287,7 +287,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 2.5em;
+  padding: 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   background-color: #34ac4e4d;
@@ -346,21 +346,10 @@ body {
     #ff99ff
   );
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 8s ease infinite;
-  animation: AnimationName 8s ease infinite;
+  -webkit-animation: wowWowWow 8s ease infinite;
+  animation: wowWowWow 8s ease infinite;
 }
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 49%;
-  }
-  50% {
-    background-position: 100% 52%;
-  }
-  100% {
-    background-position: 0% 49%;
-  }
-}
-@keyframes AnimationName {
+@-webkit-keyframes wowWowWow {
   0% {
     background-position: 0% 49%;
   }
@@ -450,19 +439,97 @@ body {
   font-size: 1.8rem;
   line-height: 1.35;
 }
+
 .main-btn-container {
   margin-top: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+.main-btn-container .main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.main-btn-container .main-btn:first-child .social-icon{
+  width: 80px;
+  max-width: 80px;
+  border-radius: 50%;
+}
+.main-btn-container .social-icon:not(:last-child) {
+max-width: 30px;
+}
+
+
+
+.main-btn-container .main-btn:first-child {
+  position: relative;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#8d008d),
+    color-stop(#3ec95c),
+    color-stop(#ff0066),
+    color-stop(#33cc00),
+    color-stop(#12fcfc),
+    color-stop(#00ff00),
+    color-stop(#cccc33),
+    color-stop(#0000ff),
+    color-stop(#33ff99),
+    color-stop(#330099),
+    to(#cf00cf)
+  );
+  background: linear-gradient(
+    90deg,
+    #cc00cc,
+    #3ec95c,
+    #ff0066,
+    #33cc00,
+    #66ffff,
+    #00ff00,
+    #cccc33,
+    #0000ff,
+    #09ff84,
+    #330099,
+    #ff99ff
+  );
+  background-size: 600% 600%;
+  -webkit-animation: wowWowWow 18s ease infinite;
+  animation: wowWowWow 18s ease infinite;
+  color: #0000ff;
+  flex-basis: 40%;
+  text-shadow: rgba(255, 255, 255, 0.432) 2px 0px 0px;
+}
+.main-btn-container .main-btn:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(246, 242, 242, 0.146);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.main-btn-container .main-btn:nth-child(2) {
+  flex-basis: 35%;
+
+}
+.main-btn-container .main-btn:last-child {
+  flex-basis: 25%;
+
 }
 .main-btn-container a {
   color: #34ac4e;
 }
 .main-btn {
   border: 2px solid #34ac4e;
-  height: 2em;
-  width: 8em;
+  padding: 2em 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,7 +539,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   letter-spacing: 0.3px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
@@ -483,8 +550,15 @@ body {
   color: #000;
   border: 2px solid rgba(0, 0, 0, 0.4);
 }
-.main-btn:last-child {
-  margin-left: 1em;
+@media(max-width:550px) {
+  .main-btn {
+    padding: .5em 0.25em;
+  }
+  .main-btn-container .main-btn:first-child .social-icon{
+    width: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+  }
 }
 .d-none {
   display: none;
@@ -538,7 +612,7 @@ body {
   }
 }
 .main {
-  margin-top: 8em;
+  display: block;
 }
 .main__text {
   display: -webkit-box;
