@@ -12,18 +12,19 @@ if (!sessionStorage.alreadyClicked) {
             startDelay: 7600,
             cursorChar: '_'
         });
+
+        // strings: ['_', ' ', 'Hello!', 'Im Boris Slonov', 'Web Developer'],
     
     
     
         new Typed('#typed3', {
-            strings: ['_', ' ', 'Hello!', 'Im Boris Slonov', 'Web Developer'],
             typeSpeed: 30,
             backSpeed: 25,
             fadeOut: false,
             loop: false,
+            strings: ['_', ' ', 'Hello!', 'Im Boris Slonov', 'Web Developer'],
             cursorChar: ''
         });
-    
     
     
     
@@ -33,17 +34,14 @@ if (!sessionStorage.alreadyClicked) {
                     $('.vis').fadeIn(500)
                 }, 4250);
     
+    
                 setInterval(() => {
-                    $('.vis-btn').fadeIn(500)
+                    $('.vis-content').fadeIn(400)
                 }, 4750);
     
                 setInterval(() => {
-                    $('.vis-content').fadeIn(100)
-                }, 5000);
-    
-                setInterval(() => {
                     $('.vis-header').fadeIn(100);
-                }, 5000);
+                }, 4750);
     
     
                 setInterval(() => {
