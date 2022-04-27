@@ -320,29 +320,29 @@ body {
     left top,
     right top,
     from(#cc00cc),
-    color-stop(#3ec95c),
-    color-stop(#ff0066),
-    color-stop(#33cc00),
+    color-stop(#b5179e),
+    color-stop(#7209b7),
+    color-stop(#480ca8),
     color-stop(#66ffff),
-    color-stop(#00ff00),
-    color-stop(#cccc33),
+    color-stop(#3f37c9),
+    color-stop(#4361ee),
     color-stop(#0000ff),
-    color-stop(#33ff99),
-    color-stop(#330099),
+    color-stop(#4895ef),
+    color-stop(#4cc9f0),
     to(#ff99ff)
   );
   background: linear-gradient(
     90deg,
     #cc00cc,
-    #3ec95c,
-    #ff0066,
-    #33cc00,
+    #b5179e,
+    #7209b7,
+    #480ca8,
     #66ffff,
-    #00ff00,
-    #cccc33,
+    #3f37c9,
+    #4361ee,
     #0000ff,
-    #33ff99,
-    #330099,
+    #4895ef,
+    #4cc9f0,
     #ff99ff
   );
   background-size: 600% 600%;
@@ -451,18 +451,15 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-
 }
-.main-btn-container .main-btn:first-child .social-icon{
+.main-btn-container .main-btn:first-child .social-icon {
   width: 80px;
   max-width: 80px;
   border-radius: 50%;
 }
 .main-btn-container .social-icon:not(:last-child) {
-max-width: 30px;
+  max-width: 30px;
 }
-
-
 
 .main-btn-container .main-btn:first-child {
   position: relative;
@@ -499,12 +496,23 @@ max-width: 30px;
     #ff99ff
   );
   background-size: 600% 600%;
-  -webkit-animation: wowWowWow 18s ease infinite;
-  animation: wowWowWow 18s ease infinite;
+  -webkit-animation: wowWowWow 12s ease infinite;
+  animation: wowWowWow 12s ease infinite;
   color: #0000ff;
   flex-basis: 40%;
   text-shadow: rgba(255, 255, 255, 0.432) 2px 0px 0px;
+  border-right: none;
 }
+
+.tg-icon-container .social-icon {
+  margin-right: 0;
+  transition: all .3s;
+}
+.main-btn-container .main-btn:first-child:hover .tg-icon-container .social-icon {
+ 
+  background-color: rgba(255, 255, 255, 0.21);
+}
+
 .main-btn-container .main-btn:first-child::before {
   content: "";
   position: absolute;
@@ -518,18 +526,17 @@ max-width: 30px;
 }
 .main-btn-container .main-btn:nth-child(2) {
   flex-basis: 35%;
-
+  border-left: none;
 }
 .main-btn-container .main-btn:last-child {
   flex-basis: 25%;
-
 }
 .main-btn-container a {
   color: #34ac4e;
 }
 .main-btn {
   border: 2px solid #34ac4e;
-  padding: 2em 0.25em;
+  padding: 0.35em 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,15 +553,47 @@ max-width: 30px;
 }
 .main-btn:hover {
   cursor: pointer;
-  background-color: #34ac4e;
   color: #000;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#8d008d),
+    color-stop(#3ec95c),
+    color-stop(#ff0066),
+    color-stop(#33cc00),
+    color-stop(#12fcfc),
+    color-stop(#00ff00),
+    color-stop(#cccc33),
+    color-stop(#0000ff),
+    color-stop(#33ff99),
+    color-stop(#330099),
+    to(#cf00cf)
+  );
+  background: linear-gradient(
+    90deg,
+    #cc00cc,
+    #3ec95c,
+    #ff0066,
+    #33cc00,
+    #66ffff,
+    #00ff00,
+    #cccc33,
+    #0000ff,
+    #09ff84,
+    #330099,
+    #ff99ff
+  );
+  background-size: 600% 600%;
+  -webkit-animation: wowWowWow 8s ease infinite;
+  animation: wowWowWow 8s ease infinite;
 }
-@media(max-width:550px) {
+@media (max-width: 550px) {
   .main-btn {
-    padding: .5em 0.25em;
+    padding: 0.5em 0.25em;
   }
-  .main-btn-container .main-btn:first-child .social-icon{
+  .main-btn-container .main-btn:first-child .social-icon {
     width: 60px;
     max-width: 100%;
     border-radius: 50%;
