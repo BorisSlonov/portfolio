@@ -287,7 +287,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1em;
+  padding: .5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   background-color: #34ac4e4d;
